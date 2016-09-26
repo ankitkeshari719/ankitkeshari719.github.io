@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="description" content="Ankit Keshari - Software Engineer and Android App Developer">
+	<meta name="keywords" content="Programmer, Software Engineer, Ankit Keshari , Ankit, Keshari">
+	<meta name="author" content="Ankit Keshari">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Ankit Keshari</title>
+
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" media="screen, projection" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<script src="js/jquery.min.js"></script>
+</head>
+
+<body id="top">
+	<div id="boxcontainer">
+		<div class="hello"><center>HELLO</center>
+		</div>
+
+		<div class="introduction">
+			<img src="images/ankit.jpg" alt="Ankit Keshari -  Software Engineer and Android App Developer"/>
+			<h1><span class="small_im"><em>I'm </em></span>Ankit Keshari</h1>
+			<h2>{Software Engineer}</h2>
+		</div>
+
+		<div class="content">
+			<p>I'm a programmer and Android App Developer from India, currently studying Computer Science at <a href="http://www.chitkara.edu.in" target="_blank">Chitkara University</a>, Punjab (2013-17 batch).<br />
+			</p>
+		</div>
+
+		<div class="links">
+			<p>
+				<a href="http://ankitkeshari719.github.io"><i class="fa fa-home"></i> Home</a> 
+				<a href="https://github.com/ankitkeshari719" target="_blank"><i class="fa fa-github"></i> GitHub</a> 
+				<a href="https://www.linkedin.com/in/ankit-keshari-a2937094?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a> 
+			</p>
+		</div>
+	</div>
+
+	<div id="moreinfo">
+		<a href="#projects" class="scroll"><span class="fa fa-coffee"></span>&nbsp; View projects</a> <span class="pipeline">|</span> 
+		<a href="docs/ankit-keshari-resume.pdf" target="_blank"><span class="fa fa-file-pdf-o"></span>&nbsp; Check my resume</a> <span class="pipeline">|</span>
+		<a href="mailto:ankitkeshari719@gmail.com" target="_blank"><span class="fa fa-envelope"></span>&nbsp; Get in touch</a>
+	</div>
+
+	<div id="projects" class="clearfix">
+		<h1>Projects. <div class="coffeeicon"><span class="fa fa-coffee"></span></div></h1>
+	</div>
+
+	<div id="contributions" class="clearfix">
+		<h1>Collabs. <div class="codeicon"><span class="fa fa-code"></span></div></h1>
+	</div>
+
+	<footer>
+		<p><a href="#top" class="scroll" style="color:#587844; line-height:30px;" title="Go to top"><span class="fa fa-chevron-up"></span></a></p>
+		<p>&copy; 2016 <script>var curr_year=new Date().getFullYear(); if(curr_year!='2016') document.write(' - '+curr_year);</script> <a href="http://ankitkeshari719.github.io" title="That's me" style="color:#445878;">Ankit Keshari</a> | Crafted with <span class="fa fa-heart" title="Heartwork!" style="color:#784458;"></span></p>
+	</footer>
+
+	<!-- jQuery for scroll effects and animations -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		/*-----------------------------------------
+		Add smooth scrolling to link:
+		-----------------------------------------*/
+		$(".scroll").click(function(event){
+			// Prevent default anchor click behaviour:
+			event.preventDefault();
+			// Store hash:
+			var hash = this.hash;
+			// Using jQuery's animate() method to add smooth page scroll:
+			// (The optional number (900) specifies the number of milliseconds it takes to scroll.)
+			$('html, body').animate({scrollTop:$(hash).offset().top}, 500, function(){
+				// Add hash (#) to URL when done scrolling (default click behaviour):
+				window.location.hash = hash;
+			});
+		});
+	});
+	</script>
+</body>
+</html>
